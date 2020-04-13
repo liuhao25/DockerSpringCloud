@@ -31,4 +31,4 @@ build/
 .vscode/
 
 ### Self ###
-
+.gitignore
