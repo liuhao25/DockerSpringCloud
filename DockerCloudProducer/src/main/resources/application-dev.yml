@@ -1,19 +1,15 @@
 spring:
   application:
-    name: docker-cloud-eureka-server
+    name: docker-cloud-producer
     
 server:
-  port: 7999
+  port: 8001
   
 eureka:
-  instance:
-    hostname: locahost
   client:
-    register-with-eureka: false
-    fetch-registry: false
     serviceUrl:
-      defaultZone: http://locahost:7999/eureka/
-      
+      defaultZone: http://localhost:7999/eureka/
+        
 management:
   endpoints:
     web:
